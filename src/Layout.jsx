@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer/Footer";
 export const Layout = () => {
   return (
     <>
-      <div className="mx-10 my-5">
+      <div className="mx-32 my-5 font-serif">
         {" "}
         <Header />
         <Outlet />

@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  return <div className="border border-black h-180 p-10">About</div>;
+};
