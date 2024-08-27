@@ -26,14 +26,14 @@ export const Skills = () => {
     <div className="border border-black h-180 p-10 flex justify-between">
       <div className="border border-black w-96 h-144 rounded-3xl p-10 flex">
         <div className="border border-black w-full h-full">
-          <h1 className="text-center font-bold text-2xl my-5">
+          <h1 className="text-center font-bold text-3xl text-gray-500 my-5 ">
             Programming Languages
           </h1>
           <ul className="border border-black h-96 mx-5 flex flex-col justify-evenly pl-5">
             {programmingLanguagesKnown.map((skill) => {
               return (
                 <div className="flex">
-                  <RiVerifiedBadgeFill className="w-7 h-7 mx-5" />
+                  <RiVerifiedBadgeFill className="w-7 h-7 mx-5 text-sky-500" />
                   <li className="font-bold text-lg">{skill}</li>
                 </div>
               );
@@ -43,14 +43,14 @@ export const Skills = () => {
       </div>
       <div className="border border-black w-96 h-144 rounded-3xl p-10 flex">
         <div className="border border-black w-full h-full">
-          <h1 className="text-center font-bold text-2xl my-5">
+          <h1 className="text-center font-bold text-3xl text-gray-500 my-5 ">
             Frameworks & Library
           </h1>
           <ul className="border border-black h-96 my-5 mx-5 flex flex-col justify-evenly pl-5">
             {frameworksKnown.map((skill) => {
               return (
                 <div className="flex">
-                  <RiVerifiedBadgeFill className="w-7 h-7 mx-5" />
+                  <RiVerifiedBadgeFill className="w-7 h-7 mx-5 text-sky-500" />
                   <li className="font-bold text-lg">{skill}</li>
                 </div>
               );
@@ -60,12 +60,14 @@ export const Skills = () => {
       </div>
       <div className="border border-black w-96 h-144 rounded-3xl p-10 flex">
         <div className="border border-black w-full h-full">
-          <h1 className="text-center font-bold text-2xl my-5">Tools</h1>
+          <h1 className="text-center font-bold text-3xl text-gray-500 my-5 ">
+            Tools
+          </h1>
           <ul className="border border-black h-96 my-5 mx-5 flex flex-col justify-evenly pl-5">
             {toolsKnown.map((skill) => {
               return (
                 <div className="flex">
-                  <RiVerifiedBadgeFill className="w-7 h-7 mx-5" />
+                  <RiVerifiedBadgeFill className="w-7 h-7 mx-5 text-sky-500" />
                   <li className="font-bold text-lg">{skill}</li>
                 </div>
               );
@@ -75,12 +77,14 @@ export const Skills = () => {
       </div>
       <div className="border border-black w-96 h-144 rounded-3xl p-10 flex">
         <div className="border border-black w-full h-full">
-          <h1 className="text-center font-bold text-2xl my-5">Soft Skills</h1>
+          <h1 className="text-center font-bold text-3xl text-gray-500 my-5 ">
+            Soft Skills
+          </h1>
           <ul className="border border-black h-96 my-5 mx-5 flex flex-col justify-evenly pl-5">
             {softSkills.map((skill) => {
               return (
                 <div className="flex">
-                  <RiVerifiedBadgeFill className="w-7 h-7 mx-5" />
+                  <RiVerifiedBadgeFill className="w-7 h-7 mx-5 text-sky-500" />
                   <li className="font-bold text-lg">{skill}</li>
                 </div>
               );
