@@ -12,7 +12,7 @@ import { Home } from "./components/Home/Home.jsx";
 import { About } from "./components/About/About.jsx";
 import { Skills } from "./components/Skills/Skills.jsx";
 import { Projects } from "./components/Projects/Projects.jsx";
-import { Contact } from "./components/Contact/Contact.jsx";
+import { Contact, fetchConactData } from "./components/Contact/Contact.jsx";
 import { ErrorPage } from "./ErrorPage.jsx";
 
 //Router
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="skill" element={<Skills />} />
       <Route path="project" element={<Projects />} />
-      <Route path="contact" element={<Contact />} />
+      {/* <Route loader={fetchConactData} path="contact" element={<Contact />} /> */}
       <Route path="*" element={<ErrorPage />} />
     </Route>
   )

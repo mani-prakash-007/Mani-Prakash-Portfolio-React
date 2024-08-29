@@ -1,6 +1,14 @@
 import React from "react";
 import RandomQuoteGenerator from "../../assets/Random-Quote-Generator.png";
 import ImageGallery from "../../assets/Image-Gallery.png";
+import GithubSearcher from "../../assets/Github-searcher.png";
+import Recipe from "../../assets/Recipe.png";
+import WebDictionary from "../../assets/Web-Dictionary.png";
+import Weather from "../../assets/Weather.png";
+import TicTacToe from "../../assets/Tic-Tac-Toe.png";
+import Rock from "../../assets/Rock-paper.png";
+import ToDo from "../../assets/ToDo-App.png";
+import Calculator from "../../assets/React-calculator.png";
 
 export const Projects = () => {
   const projectDetails = [
@@ -14,6 +22,54 @@ export const Projects = () => {
     {
       ProjectName: "Image Gallery",
       ImageSoure: ImageGallery,
+      GithubRepository: "",
+      Deployment: "",
+    },
+    {
+      ProjectName: "Github User Searcher",
+      ImageSoure: GithubSearcher,
+      GithubRepository: "",
+      Deployment: "",
+    },
+    {
+      ProjectName: "Recipe Finder",
+      ImageSoure: Recipe,
+      GithubRepository: "",
+      Deployment: "",
+    },
+    {
+      ProjectName: "Web Dictionary",
+      ImageSoure: WebDictionary,
+      GithubRepository: "",
+      Deployment: "",
+    },
+    {
+      ProjectName: "Weather App",
+      ImageSoure: Weather,
+      GithubRepository: "",
+      Deployment: "",
+    },
+    {
+      ProjectName: "Tic Tac Toe",
+      ImageSoure: TicTacToe,
+      GithubRepository: "",
+      Deployment: "",
+    },
+    {
+      ProjectName: "Rock Paper Sicssor",
+      ImageSoure: Rock,
+      GithubRepository: "",
+      Deployment: "",
+    },
+    {
+      ProjectName: "To-Do App",
+      ImageSoure: ToDo,
+      GithubRepository: "",
+      Deployment: "",
+    },
+    {
+      ProjectName: "React Calculator",
+      ImageSoure: Calculator,
       GithubRepository: "",
       Deployment: "",
     },
@@ -33,7 +89,7 @@ export const Projects = () => {
     }
   };
   return (
-    <div className="border border-black min-h-180 p-10 flex justify-evenly flex-wrap">
+    <div className=" h-180 overflow-y-auto p-10 flex justify-evenly scroll-smooth flex-wrap">
       {projectDetails.map((data, index) => {
         return (
           <li key={index} className="list-none">
@@ -42,7 +98,7 @@ export const Projects = () => {
                 <img
                   src={data.ImageSoure}
                   alt="Random Quote Generator"
-                  className="rounded-3xl w-full h-80"
+                  className="rounded-3xl w-full h-80 border border-black"
                 />
                 <div className=" h-36 flex justify-center items-center">
                   <h1 className="font-bold text-4xl text-center">

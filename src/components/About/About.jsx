@@ -5,12 +5,12 @@ import Experience from "../../assets/Experience.png";
 
 export const About = () => {
   return (
-    <div className="border border-black h-180 p-10 flex justify-between">
-      <div className="border border-black w-96 h-144 items-center flex">
+    <div className=" h-180 p-10 flex justify-between">
+      <div className=" w-96 h-144 items-center flex">
         <img src={Photo2} alt="Photo - 2" className="rounded-xl border border-black" />
       </div>
-      <div className="border border-black w-3/4 h-144 p-10 flex flex-col justify-between">
-        <div className="border border-black w-auto h-60 px-20 flex justify-between items-center">
+      <div className=" w-3/4 h-144 p-10 flex flex-col justify-between">
+        <div className=" w-auto h-60 px-20 flex justify-between items-center">
           <div className="border border-black h-36 w-108 rounded-3xl flex justify-center">
             <div className="flex flex-col justify-center items-center">
               <img src={Experience} className="w-10 h-10" alt="Svg" />
@@ -26,7 +26,7 @@ export const About = () => {
             </div>
           </div>
         </div>
-        <div className="border border-black w-auto h-60 py-5 px-10">
+        <div className=" w-auto h-60 py-5 px-10">
           <p className="text-lg">I'm Mani Prakash, a third-year Computer Science student specializing
           in Web Development, Artificial Intelligence and Machine Learning. I'm
           passionate about technology and driven to push boundaries. I

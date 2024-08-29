@@ -1,10 +1,10 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className="border border-black flex justify-between py-5 px-20 flex-wrap">
-      <div className="border border-black h-20 w-132 flex justify-center items-center">
+    <header className=" flex justify-between py-5 px-20 flex-wrap mb-3">
+      <div className=" h-20 w-132 flex justify-center items-center">
         <NavLink
           to={"/"}
           className={({ isActive }) =>
@@ -16,7 +16,7 @@ export const Header = () => {
           </h1>
         </NavLink>
       </div>
-      <div className="border border-black flex justify-center items-center w-168 flex-wrap">
+      <div className=" flex justify-center items-center w-168 flex-wrap">
         <NavLink
           to={""}
           className={({ isActive }) =>
@@ -57,7 +57,7 @@ export const Header = () => {
         >
           Projects
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to={"/contact"}
           className={({ isActive }) =>
             `mx-7 font-bold text-xl hover:text-gray-400 ${
@@ -66,7 +66,7 @@ export const Header = () => {
           }
         >
           Contact
-        </NavLink>
+        </NavLink> */}
       </div>
     </header>
   );
